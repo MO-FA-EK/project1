@@ -7,20 +7,37 @@
 }
 
 
-
-.card-container 
-{
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 5p;
-    justify-content: space-evenly; */
-    align-content: flex-start;
-    align-items: center;
-    width: 100%;
+    justify-content: center; /* ← this centers the cards */
+    width: 89%;
     margin: 0 auto;
-    background-color: #000E2D;
+    margin-top: 3%;
 }
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000E2D;
+    display: block; /* Ensures it doesn't behave like a flex child */
+  }
   
+
+.profile-card {
+    width: 20%;
+    height: 250px;
+    background: #007BFF;
+    border-radius: 15px; 
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 1.5% 1.5% 3% 1.5%; /* cleaner spacing all around */
+    margin-top: 3%;
+}
+
   
 
 .profile-image-background img{
@@ -43,45 +60,21 @@
 
 
 
-.profile-card {
-    width: 2px;
-    height: 250px;
-    background: #007BFF; /* Use your desired blue color */
-    border-radius: 15px; /* Rounded corners */
-    padding: 15px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    position: relative;
-    display:  flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    /* gap: 5px; */
-    font-family: 'Roboto';
-    /* margin: 0 auto; */
-    /* display: flex; */
-     /* flex: 0 0 calc(10% - 5px);
-    max-width: calc(10% - 5px);  */
-    margin-top: 30px;
-    margin-bottom: 50px;
-    flex: 0 0 auto;
-    margin: 0 auto;
-
-}
 
 .profile-image-background {
-    background-color: #000E2D;
+    /* background-color: #000E2D; */
     border-radius: 50%;
     width: 100px;
     height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the image horizontally */
+
     overflow: hidden; /* Ensure the image stays within the circle */
     position: absolute; /* Position the image above the card */
     top: -50px; /* Move the image up to overlap the card */
     flex-shrink: 0;
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
 }
 
 .profile-image {
@@ -89,6 +82,7 @@
     height: 100%;
     border-radius: 50%; 
     overflow: hidden;
+    margin: 0 auto; /* Center the image within the circle */
 }
 
 .profile-image img {

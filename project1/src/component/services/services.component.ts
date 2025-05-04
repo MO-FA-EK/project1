@@ -8,37 +8,25 @@ import { CommonModule } from '@angular/common';
   styleUrl: './services.component.css'
 })
 export class ServicesComponent {
-  members = [
+  services = [
     {
-      Text: ' ',
-      title: 'مطور واجهات أمامية',
-      image: '../../assets/img/1000_F_597319490_GNglrmOrTZcxBmYNpNCgBJQlM7PHPyNx.jpg',
-    
+      title: 'Web Development',
+      freelancers: [
+        { name: 'Kareem', role: 'Frontend Developer', image: 'assets/kareem.jpg' },
+        { name: 'Ali', role: 'Backend Developer', image: 'assets/ali.jpg' }
+      ]
     },
     {
-      Text: ' ',
-      title: 'مصممة UI/UX',
-      image: '../../assets/img/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg',
+      title: 'Graphic Design',
+      freelancers: [
+        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
+        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
+      ]
+    }
     
-    },
-
-    {
-      Text: ' ',
-      title: 'مطور واجهات أمامية',
-      
-      image: '../../assets/img/Web-Development-1024x747.png',
-    
-    },
-    {
-      Text: ' ',
-      title: 'مصممة UI/UX',
-      image: '../../assets/img/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg',
-    
-    },
-
-
-
-    // أضف أعضاء آخرين حسب الحاجة
   ];
+  
 
 }

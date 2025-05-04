@@ -3,24 +3,27 @@
     
 </div>
 
-<div class="card-container">
-    <div class="border"> </div>
-<div class="profile-card" *ngFor="let member of members">
+<div class="card-container" *ngFor="let service of services">
+  <div class="title">
+      <h2>{{ service.title }}</h2>
+  </div>
 
+
+  <div class="profile-card" *ngFor="let freelancer of service.freelancers">
     <div class="profile-image-background">
-      <!-- <img src=""  alt="صورة"> -->
       <div class="profile-image">
-        <img [src]="member.image" class="card-img-top" [alt]="">
+        <img [src]="freelancer.image" class="card-img-top" alt="Freelancer Image">
       </div>
     </div>
-    <div class="profile-info">
-      <h2>{{ member.Text }}</h2>
-  <p>{{ member.Text }}</p>  
-  
-  <button ><a routerLink="/services" routerLinkActive="active">services</a></button>
-  
 
+    <div class="profile-info">
+      <h3>{{ freelancer.name }}</h3>
+      <p>{{ freelancer.role }}</p>
+    </div>
+    <div class="linkedIn">
+      <a>{{ freelancer.linkedIn }}</a>
+    </div>
   </div>
-</div>
+
 </div>
 
