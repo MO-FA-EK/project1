@@ -13,7 +13,28 @@ export class ServicesComponent {
       title: 'Web Development',
       freelancers: [
         { name: 'Kareem', role: 'Frontend Developer', image: 'assets/kareem.jpg' },
-        { name: 'Ali', role: 'Backend Developer', image: 'assets/ali.jpg' }
+        { name: 'Ali', role: 'Backend Developer', image: 'assets/ali.jpg' },
+        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
+      ]
+    },
+    {
+      title: 'Game Development',
+      freelancers: [
+        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
+        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
+      ]
+    },
+
+    {
+      title: 'Graphic Design',
+      freelancers: [
+        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
+        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
       ]
     },
     {
@@ -24,7 +45,7 @@ export class ServicesComponent {
         { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
         { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
       ]
-    }
+    },
     
   ];
   
