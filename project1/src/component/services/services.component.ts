@@ -43,6 +43,10 @@ export class ServicesComponent {
         { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
         { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
         { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' },
+        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
+        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
         { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
       ]
     },

@@ -10,11 +10,20 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* ← this centers the cards */
+    justify-content: center;
     width: 89%;
     margin: 0 auto;
     margin-top: 3%;
+    max-height: 40vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 20px;
+
+    border: 2px solid #ce1616; /* Thin red line border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: transparent; /* Make background clear */
 }
+
 .title {
     width: 100%;
     text-align: center;
@@ -36,6 +45,7 @@
     position: relative;
     margin: 1.5% 1.5% 3% 1.5%; /* cleaner spacing all around */
     margin-top: 3%;
+    /* overflow-y: scroll; */
 }
 
   
@@ -105,6 +115,15 @@
     font-size: 0.9em;
     line-height: 1.4;
 }
+.title1{
+    background-color: #6b3232;
+    width: 100%;
+    
+    font-size: 35px;
+    line-height: 50px;
+    color: #f0f0f0;
+    display: block;
+ }
 
 /* Container for links */
 /* .profile-links {
