@@ -3,6 +3,10 @@
 .nav-bar-div {
   display: flex;
   align-items: center;
+  background-color: transparent;
+  width: 100%;
+  margin: 0 auto;
+
 }
 .logo
 {
