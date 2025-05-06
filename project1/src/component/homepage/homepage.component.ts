@@ -20,7 +20,7 @@ export class HomepageComponent {
     {
       Text: ' ',
       title: 'مصممة UI/UX',
-      image: '../../assets/img/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg',
+      image: '../../assets/img/Web-Development-1024x747.png',
     
     },
 
@@ -28,13 +28,13 @@ export class HomepageComponent {
       Text: ' ',
       title: 'مطور واجهات أمامية',
       
-      image: '../../assets/img/Web-Development-1024x747.png',
+      image: '../../assets/img/WhatsApp Image 2025-05-06 at 13.16.01_76bc54bb.jpg',
     
     },
     {
       Text: ' ',
       title: 'مصممة UI/UX',
-      image: '../../assets/img/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg',
+      image: '../../assets/img/graphic-design.jpg',
     
     },
 
