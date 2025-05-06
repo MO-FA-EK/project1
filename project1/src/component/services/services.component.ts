@@ -29,7 +29,7 @@ export class ServicesComponent {
     },
 
     {
-      title: 'Graphic Design',
+      title: 'Application development',
       freelancers: [
         { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
         { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },

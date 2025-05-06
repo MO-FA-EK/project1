@@ -18,9 +18,9 @@
 .title {
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 50px;
-    color: #000E2D;
+    color: #f0f0f0;
     display: block; /* Ensures it doesn't behave like a flex child */
   }
   
@@ -153,6 +153,25 @@
     .profile-info {
         
         text-align: center;
+ }
+ .title1{
+    background-color: #000;
+    width: 100%;
+    
+    font-size: 100px;
+    line-height: 50px;
+    color: #f0f0f0;
+    display: block;
+ }
+ .C1{
+    background-color: #000;
+    width: 100%;
+    
+    font-size: 100px;
+    line-height: 50px;
+    color: #f0f0f0;
+    display: block;
+
  }
 
 
