@@ -14,12 +14,12 @@
     width: 89%;
     margin: 0 auto;
     margin-top: 3%;
-    max-height: 40vh;
+    max-height: 55vh;
     overflow-y: scroll;
     box-sizing: border-box;
     padding: 20px;
 
-    border: 2px solid #ce1616; /* Thin red line border */
+    border: 2px solid #735c5c; /* Thin red line border */
     border-radius: 10px; /* Rounded corners */
     background-color: transparent; /* Make background clear */
 }
@@ -30,7 +30,8 @@
     font-size: 30px;
     line-height: 50px;
     color: #f0f0f0;
-    display: block; /* Ensures it doesn't behave like a flex child */
+    display: block; 
+    margin-bottom: 2%;
   }
   
 
@@ -45,7 +46,7 @@
     position: relative;
     margin: 1.5% 1.5% 3% 1.5%; /* cleaner spacing all around */
     margin-top: 3%;
-    /* overflow-y: scroll; */
+    
 }
 
   
@@ -55,8 +56,6 @@
     width: 100px;
     height: 100px;
      margin:0 auto; 
-    /* margin-left: 10%;
-    border-radius: 50%; */
     display: block;
 }
 .info-box{
@@ -72,7 +71,7 @@
 
 
 .profile-image-background {
-    /* background-color: #000E2D; */
+    
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -98,12 +97,11 @@
 .profile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Make sure the image covers the entire area without distortion */
-    display: block;
+    object-fit: cover; 
 }
 
 .profile-info {
-    padding-top: 60px; /* Space between image and text to avoid overlap */
+    padding-top: 60px; 
 }
 
 .profile-info h2 {
@@ -116,51 +114,39 @@
     line-height: 1.4;
 }
 .title1{
-    background-color: #6b3232;
-    width: 100%;
+   
+    width: 50%;
     
     font-size: 35px;
-    line-height: 50px;
+    line-height: 20px;
     color: #f0f0f0;
     display: block;
  }
 
-/* Container for links */
-/* .profile-links {
-    display: flex; 
-    gap: 15px; 
-    justify-content: center; 
-    margin-top: 15px; 
-} */
+ .C1{
+   
+    width: 100%;
+    
+    font-size: 50px;
+    line-height: 30px;
+    color: #f0f0f0;
+    display: block;
 
-/* New styles for card links */
-/* .card-link {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease; 
-} */
-
-/* .card-link:hover {
-    transform: scale(1.1); 
-    opacity: 0.8; 
-} */
-
-/* .card-link svg { */
-    /* fill: currentColor; /* Takes color from the link's text color */
-    /* width: 40px;
-    height: 40px;  */
- /* }    */
+ }
+ .C{
+    margin-top: 10%;
+ }
 
 @media screen and (max-width: 1268px) {
     .profile-card {
-        /* width: 80%; */
+      
        height: auto;
-        /* padding: 20px; */
+        
         text-align: start;
         margin-top: 40px; 
 
-        border: 6px solid #000; /* إطار أسود بسماكة 2px */
-        border-radius: 10px;    /* زوايا مدورة اختيارية */
+        border: 6px solid #000; 
+        border-radius: 10px;   
         padding: 10px; 
 
     }
@@ -182,16 +168,7 @@
     color: #f0f0f0;
     display: block;
  }
- .C1{
-    background-color: #000;
-    width: 100%;
-    
-    font-size: 100px;
-    line-height: 50px;
-    color: #f0f0f0;
-    display: block;
-
- }
+ 
 
 
 }

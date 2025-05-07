@@ -23,7 +23,7 @@ export class ServicesComponent {
       freelancers: [
         { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
         { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: '', role: 'Illustrator', image: 'assets/sara.jpg' },
         { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
       ]
     },
@@ -31,22 +31,22 @@ export class ServicesComponent {
     {
       title: 'Application development',
       freelancers: [
-        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: '', role: 'Logo Designer', image: 'assets/fatima.jpg' },
         { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: '', role: 'Illustrator', image: 'assets/sara.jpg' },
         { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
       ]
     },
     {
       title: 'Graphic Design',
       freelancers: [
-        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: '', role: 'Logo Designer', image: 'assets/fatima.jpg' },
         { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
-        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' },
-        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
+        { name: '', role: 'Illustrator', image: 'assets/img/Web-Development-1024x747.png' },
+        { name: 'Omar', role: '3D Artist', image: 'assets/img/Web-Development-1024x747.png',linkedIn: 'https://www.linkedin.com/in/omar/' },
+        { name: '', role: 'Logo Designer', image: 'assets/fatima.jpg' },
         { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
+        { name: '', role: 'Illustrator', image: 'assets/sara.jpg' },
         { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
       ]
     },
