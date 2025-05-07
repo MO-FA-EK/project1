@@ -137,6 +137,30 @@
     margin-top: 10%;
  }
 
+
+.card-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #5b9aad;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #5b9aad;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #5b9aad;
+}
+
+
+
+
+
 @media screen and (max-width: 1268px) {
     .profile-card {
       
