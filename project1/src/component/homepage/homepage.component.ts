@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
 export class HomepageComponent {
   members = [
     {
-      Text: ' ',
+      Text: 'sdsdfdsfdsfdsfsdf ggthyhythy ',
       title: 'مطور واجهات أمامية',
       image: '../../assets/img/1000_F_597319490_GNglrmOrTZcxBmYNpNCgBJQlM7PHPyNx.jpg',
     
