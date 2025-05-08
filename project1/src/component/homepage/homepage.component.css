@@ -8,33 +8,46 @@
   
 
 .A{
-    color:#020024;
+    /* background-color: #000E2D; */
+    display: flex;
+    margin: 0 auto; 
+    width: 90%;
+    margin-top: 3%;
+    margin-bottom: 3%;
    
     
 
 
 }
-.A3
-{
+.A1{
+    
+  background-color: transparent;
+        color: aliceblue;
+        font-size: 16px; /* حجم خط مناسب */
+        line-height: 1.6; /* زيادة المسافة بين السطور */
+        /* border-radius: 10px;  */
+        max-width: 800px; /* تحديد عرض أقصى */
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  */
+        font-family: Arial, sans-serif;
+        /* margin-right: 50%; */
+
+      
+      
+}.A3 {
     margin: 0 auto;
     font-size: 200%;
-    width: 2000px;
-   
-}
-.A3 img{
-    
-        width: 300px;
-        height: 300px;
-        border: 4px solid #00D4FF; 
-        border-radius: 10px; 
-        margin-top: -4%;
-       
-        
-        margin-left: 59%;
-        
-    
-
-}
+    width: 100%;
+    display: flex; /* enables layout control */
+    align-items: center;
+    justify-content: flex-end; /* align items to the left */
+  }
+  
+  .A3 img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid #00D4FF; 
+    border-radius: 10px; 
+  }
 .B1{
     color: brown;
 }

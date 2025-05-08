@@ -18,9 +18,11 @@
     box-sizing: border-box;
     padding: 20px;
 
-    border: 2px solid #ce1616; /* Thin red line border */
+    border: 2px solid #6c8493; /* Thin red line border */
     border-radius: 10px; /* Rounded corners */
     background-color: transparent; /* Make background clear */
+    scrollbar-width: thin; /* لـ Firefox */
+    scrollbar-color: #6c8493 transparent;
 }
 
 .title {
@@ -116,40 +118,44 @@
     line-height: 1.4;
 }
 .title1{
-    background-color: #6b3232;
+    /* background-color: #6b3232;
     width: 100%;
     
     font-size: 35px;
     line-height: 50px;
     color: #f0f0f0;
-    display: block;
+    display: block; */
+
+
+    background-color: transparent;
+        color: aliceblue;
+        font-size: 16px; /* حجم خط مناسب */
+        line-height: 1.6; /* زيادة المسافة بين السطور */
+        padding: 20px; /* مسافة داخلية */
+        /* border-radius: 10px;  */
+        max-width: 800px; /* تحديد عرض أقصى */
+        margin: 40px auto; /* توسيط العنصر في الصفحة */
+        text-align: justify; /* ضبط محاذاة النص */
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  */
+        font-family: Arial, sans-serif;
+        margin-right: 50%;
+ }
+ .C1{
+  background-color: transparent;
+        color: aliceblue;
+        font-size: 20px; /* حجم خط مناسب */
+        line-height: 1.6; /* زيادة المسافة بين السطور */
+        padding: 20px; /* مسافة داخلية */
+        /* border-radius: 10px;  */
+        max-width: 800px; /* تحديد عرض أقصى */
+        margin: 40px auto; /* توسيط العنصر في الصفحة */
+        text-align: justify; /* ضبط محاذاة النص */
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  */
+        font-family: Arial, sans-serif;
+        margin-right: 50%;
  }
 
-/* Container for links */
-/* .profile-links {
-    display: flex; 
-    gap: 15px; 
-    justify-content: center; 
-    margin-top: 15px; 
-} */
 
-/* New styles for card links */
-/* .card-link {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease; 
-} */
-
-/* .card-link:hover {
-    transform: scale(1.1); 
-    opacity: 0.8; 
-} */
-
-/* .card-link svg { */
-    /* fill: currentColor; /* Takes color from the link's text color */
-    /* width: 40px;
-    height: 40px;  */
- /* }    */
 
 @media screen and (max-width: 1268px) {
     .profile-card {
