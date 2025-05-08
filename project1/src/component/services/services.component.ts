@@ -1,57 +1,89 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-services',
-  imports: [CommonModule],
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+  styleUrls: ['./services.component.css']
 })
-export class ServicesComponent {
-  services = [
-    {
-      title: 'Web Development',
-      freelancers: [
-        { name: 'Kareem', role: 'Frontend Developer', image: 'assets/kareem.jpg' },
-        { name: 'Ali', role: 'Backend Developer', image: 'assets/ali.jpg' },
-        { name: 'Sara', role: 'Illustrator', image: 'assets/sara.jpg' },
-        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
-      ]
-    },
-    {
-      title: 'Game Development',
-      freelancers: [
-        { name: 'Fatima', role: 'Logo Designer', image: 'assets/fatima.jpg' },
-        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: '', role: 'Illustrator', image: 'assets/sara.jpg' },
-        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
-      ]
-    },
+export class ServicesComponent implements OnInit {
+  services: { title: string, freelancers: any[] }[] = [];
 
-    {
-      title: 'Application development',
-      freelancers: [
-        { name: '', role: 'Logo Designer', image: 'assets/fatima.jpg' },
-        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: '', role: 'Illustrator', image: 'assets/sara.jpg' },
-        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
-      ]
-    },
-    {
-      title: 'Graphic Design',
-      freelancers: [
-        { name: '', role: 'Logo Designer', image: 'assets/fatima.jpg' },
-        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: '', role: 'Illustrator', image: 'assets/img/Web-Development-1024x747.png' },
-        { name: 'Omar', role: '3D Artist', image: 'assets/img/Web-Development-1024x747.png',linkedIn: 'https://www.linkedin.com/in/omar/' },
-        { name: '', role: 'Logo Designer', image: 'assets/fatima.jpg' },
-        { name: 'Hassan', role: 'UI/UX Expert', image: 'assets/hassan.jpg' },
-        { name: '', role: 'Illustrator', image: 'assets/sara.jpg' },
-        { name: 'Omar', role: '3D Artist', image: 'assets/omar.jpg',linkedIn: 'https://www.linkedin.com/in/omar/' }
-      ]
-    },
-    
-  ];
-  
+  showContactModal = false;
+  selectedFreelancer: any = null;
+  selectedCategory: string = '';
+  contactForm = {
+    name: '',
+    description: '',
+    budget: '',
+    phone: ''
+  };
 
+  constructor(private http: HttpClient) {}
+
+  openContactModal(category: string, freelancer: any) {
+    this.selectedFreelancer = freelancer;
+    this.selectedCategory = category;
+    this.showContactModal = true;
+    this.contactForm = { name: '', description: '', budget: '', phone: '' };
+  }
+
+  closeContactModal() {
+    this.showContactModal = false;
+    this.selectedFreelancer = null;
+    this.selectedCategory = '';
+  }
+
+  submitContactForm() {
+    if (!this.selectedFreelancer) return;
+    const payload = {
+      developer_id: this.selectedFreelancer.id,
+      name: this.contactForm.name,
+      description: this.contactForm.description,
+      budget: this.contactForm.budget,
+      phone: this.contactForm.phone
+    };
+    this.http.post('http://localhost:3000/contact', payload).subscribe({
+      next: (res) => {
+        alert('Your request has been sent!');
+        this.closeContactModal();
+      },
+      error: (err) => {
+        alert('Failed to send request.');
+        console.error(err);
+      }
+    });
+  }
+
+  ngOnInit() {
+    this.http.get<any[]>('http://localhost:3000/developers')
+      .subscribe({
+        next: (data) => {
+          console.log('Received data from backend:', data);
+          const grouped = new Map<string, any[]>();
+
+          data.forEach(dev => {
+            if (!grouped.has(dev.category)) {
+              grouped.set(dev.category, []);
+            }
+            grouped.get(dev.category)?.push({
+              username: dev.username,
+              portfio: dev.portfio,
+              description: dev.description,
+              id: dev.id
+            });
+          });
+
+          this.services = Array.from(grouped, ([title, freelancers]) => ({ title, freelancers }));
+          console.log('Processed services:', this.services);
+        },
+        error: (error) => {
+          console.error('Error fetching data:', error);
+        }
+      });
+  }
 }

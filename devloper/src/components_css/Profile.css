@@ -1,0 +1,82 @@
+.profile{
+    display: flex;
+}
+
+.profile-page-container {
+    padding: 20px; 
+    width: 900px; 
+    margin: -20px 0px; 
+}
+
+
+
+.profile-info-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border: 1px solid #e0e0e0;
+    color: #333;
+    height: 580px;
+}
+
+.profile-info-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+
+.profile-info-card hr {
+   display: none;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    min-width: 0;
+}
+
+.info-label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #333;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.social-icons {
+    margin-top: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #007bff;
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
