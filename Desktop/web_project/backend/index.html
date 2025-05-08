@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Developers</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        #developerList {
+            list-style: none;
+            padding: 0;
+        }
+        #developerList li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+        #status {
+            font-style: italic;
+            color: #555;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Developer List</h1>
+
+    <button id="fetchButton">Fetch Developers from Server</button>
+
+    <p id="status"></p>
+
+    <ul id="developerList">
+        <!-- Developer data will be inserted here by JavaScript -->
+    </ul>
+
+    <script>
+        // Get references to the HTML elements
+        const fetchButton = document.getElementById('fetchButton');
+        const developerListUl = document.getElementById('developerList');
+        const statusParagraph = document.getElementById('status');
+
+        // --- Function to Fetch and Display Developers ---
+        async function fetchAndDisplayDevelopers() {
+            // Clear previous results and status
+            developerListUl.innerHTML = '';
+            statusParagraph.textContent = 'Loading developers...';
+            statusParagraph.className = ''; // Reset class
+
+            // Define the URL of your backend endpoint
+            const apiUrl = 'http://localhost:3000/developers';
+
+            try {
+                // Make the GET request using the fetch API
+                const response = await fetch(apiUrl);
+
+                // Check if the response was successful (status code 200-299)
+                if (!response.ok) {
+                    // If not okay, throw an error with the status text
+                    throw new Error(`Network response was not ok: ${response.statusText} (Status: ${response.status})`);
+                }
+
+                // Parse the JSON response body
+                const developers = await response.json();
+
+                // Check if any developers were returned
+                if (developers && developers.length > 0) {
+                    statusParagraph.textContent = `Successfully fetched ${developers.length} developers.`;
+
+                    // Loop through the array of developer objects
+                    developers.forEach(developer => {
+                        // Create a new list item element
+                        const listItem = document.createElement('li');
+
+                        // Populate the list item's text content
+                        // Adjust the properties (developer.name, developer.skill, etc.)
+                        // to match the actual column names returned by your API!
+                        listItem.textContent = `ID: ${developer.id}, Name: ${developer.username || 'N/A'}, Skill: ${developer.category || 'N/A'}, Joined: ${new Date(developer.created_at).toLocaleDateString()}`;
+
+                        // Append the list item to the unordered list
+                        developerListUl.appendChild(listItem);
+                    });
+                } else {
+                    // Handle the case where no developers are returned
+                    statusParagraph.textContent = 'No developers found in the database.';
+                }
+
+            } catch (error) {
+                // Handle any errors that occurred during the fetch or processing
+                console.error('Error fetching developers:', error);
+                statusParagraph.textContent = `Error fetching data: ${error.message}. Make sure the server is running.`;
+                statusParagraph.className = 'error'; // Add error class for styling
+            }
+        }
+
+        // Add an event listener to the button
+        // When the button is clicked, call the fetchAndDisplayDevelopers function
+        fetchButton.addEventListener('click', fetchAndDisplayDevelopers);
+
+    </script>
+
+</body>
+</html>
