@@ -1,8 +1,29 @@
 .footer {
-    background-color: transparent;
+    /* background-color: transparent;
     color: white;
+    margin: auto;
     
     text-align: center;
+    padding: 20px; */
+    background-color: transparent;
+    color: white;
+    text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: space-between; /* لتوزيع العناصر */
+    align-items: center;
   }
+  /* .webname{
+    background-color: rgb(17, 16, 16);
+    
+  }
+  .email{
+    background-color: blue;
+  
+  }
+  .address{
+    background-color: blueviolet;
+  } */
+  
+   
   

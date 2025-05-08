@@ -22,7 +22,7 @@ header {
 .logo {
     font-weight: bold;
     font-size: 28px;
-    /* Büyütüldü */
+    
 }
 
 nav ul {
@@ -35,7 +35,6 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    /* Büyütüldü */
     font-weight: 500;
 }
 
@@ -89,7 +88,6 @@ main {
 .contact-info h2 {
     margin-bottom: 15px;
     font-size: 36px;
-    /* Büyütüldü - 32px'ten 36px'e */
     font-weight: 600;
 }
 
@@ -234,6 +232,9 @@ textarea:focus {
 
 .send-btn:hover {
     background-color: #009900;
+}
+.contact-section{
+    color: white;
 }
 
 @media (max-width: 900px) {
