@@ -1,5 +1,5 @@
 <div class="title1">
-  <div class="servpagetext"><p>NNNNNNNZZZZZVVVVVVVHJVHGV HGVGVGVGHVHG</p></div>
+  <div class="servpagetext"><p>NNNNNNNZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZVVVVVVVHJVHGV HGVGVGVGHVHG</p></div>
   
 </div>
 <div class="C">
@@ -15,17 +15,48 @@
 <div class="profile-card" *ngFor="let freelancer of service.freelancers">
   <div class="profile-image-background">
     <div class="profile-image">
-      <img [src]="freelancer.image" class="card-img-top" alt="Freelancer Image">
+      <img src="../../assets/img/user.png" class="card-img-top" alt="Freelancer Image">
     </div>
   </div>
 
   <div class="profile-info">
-    <h3>{{ freelancer.name }}</h3>
-    <p>{{ freelancer.role }}</p>
+    <h3>{{ freelancer.username }}</h3>
+    <p>{{ freelancer.description }}</p>
   </div>
   <div class="linkedIn">
-    <a>{{ freelancer.linkedIn }}</a>
+    <a href="{{ freelancer.portfio }}" target="_blank" *ngIf="freelancer.portfio">View Portfolio</a>
   </div>
+  <button (click)="openContactModal(service.title, freelancer)" class="contact-btn">Contact Developer</button>
 </div>
 
 </div>
+
+<!-- Contact Modal -->
+<div class="modal-backdrop" *ngIf="showContactModal">
+<div class="modal">
+  <h2>Contact {{ selectedFreelancer?.username }}</h2>
+  <form (ngSubmit)="submitContactForm()">
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="contactForm.name" name="name" required />
+    </label>
+    <label>
+      Description:
+      <textarea [(ngModel)]="contactForm.description" name="description" required></textarea>
+    </label>
+    <label>
+      Budget:
+      <input type="number" [(ngModel)]="contactForm.budget" name="budget" required />
+    </label>
+    <label>
+      Phone:
+      <input type="text" [(ngModel)]="contactForm.phone" name="phone" required />
+    </label>
+    <div class="modal-actions">
+      <button type="submit">Send</button>
+      <button type="button" (click)="closeContactModal()">Cancel</button>
+    </div>
+  </form>
+</div>
+</div>
+
