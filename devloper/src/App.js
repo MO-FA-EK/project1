@@ -17,7 +17,7 @@ function AppContent() {
     return (
         <div className="App">
             {!isAuthenticated && (<nav className="home-nav">
-                <div className="home-logo"><a href='http://localhost:3001/' style={{textDecoration: 'none', color: 'black'}}>Qwilr</a></div>
+                <div className="home-logo"><a href='http://localhost:3000/' style={{textDecoration: 'none', color: 'black'}}>Qwilr</a></div>
                 <div className="home-nav-actions">
                 <button className="login-btn" onClick={() => navigate('/login')}>Login</button>
                 <button className="try-btn" onClick={() => navigate('/register')}>Register</button>

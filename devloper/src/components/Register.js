@@ -29,7 +29,7 @@ function Register() {
         setMessage('');
         setIsError(false);
 
-        const registerUrl = 'http://localhost:3000/register';
+        const registerUrl = 'https://my-backend-lmjv.onrender.com/register';
 
         if (!category) {
              setMessage('Please select a category.');

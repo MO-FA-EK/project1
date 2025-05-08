@@ -47,7 +47,7 @@ export class ServicesComponent implements OnInit {
       budget: this.contactForm.budget,
       phone: this.contactForm.phone
     };
-    this.http.post('http://localhost:3000/contact', payload).subscribe({
+    this.http.post('https://my-backend-lmjv.onrender.com/contact', payload).subscribe({
       next: (res) => {
         alert('Your request has been sent!');
         this.closeContactModal();
@@ -60,7 +60,7 @@ export class ServicesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.http.get<any[]>('http://localhost:3000/developers')
+    this.http.get<any[]>('https://my-backend-lmjv.onrender.com/developers')
       .subscribe({
         next: (data) => {
           console.log('Received data from backend:', data);

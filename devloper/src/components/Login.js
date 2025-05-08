@@ -17,7 +17,7 @@ function Login() {
         setMessage('');
         setIsError(false);
 
-        const loginUrl = 'http://localhost:3000/login';
+        const loginUrl = 'https://my-backend-lmjv.onrender.com/login';
 
         try {
             const response = await axios.post(loginUrl, {

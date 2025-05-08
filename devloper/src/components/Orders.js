@@ -44,7 +44,7 @@ function Orders() {
         setError(null);
 
         try {
-            const response = await axios.get(`http://localhost:3000/orders`, {
+            const response = await axios.get(`https://my-backend-lmjv.onrender.com/orders`, {
                  params: { userId: userId }
             });
             setOrders(response.data || []);
@@ -106,7 +106,7 @@ function Orders() {
         );
 
         try {
-             await axios.patch(`http://localhost:3000/orders/${orderId}/status`, { status: newStatus });
+             await axios.patch(`https://my-backend-lmjv.onrender.com/orders/${orderId}/status`, { status: newStatus });
             console.log(`Order ${orderId} status updated to ${newStatus}`);
         } catch (err) {
             console.error(`Error updating status for order ${orderId}:`, err);
