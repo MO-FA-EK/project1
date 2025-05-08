@@ -1,0 +1,15 @@
+.body
+{
+    background: linear-gradient( #00D4FF, #090979, #020024); 
+    overflow-x: hidden;
+
+
+
+
+}
+.header
+{
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 3%;
+}

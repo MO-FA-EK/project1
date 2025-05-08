@@ -1,0 +1,190 @@
+
+.servpagetext{
+    color: black;
+    width: 100%;
+    text-size-adjust: 30%;
+
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 3%;
+    max-height: 55vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 20px;
+
+    border: 2px solid #735c5c; /* Thin red line border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: transparent; /* Make background clear */
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: #f0f0f0;
+    display: block; 
+    margin-bottom: 2%;
+  }
+  
+
+.profile-card {
+    width: 20%;
+    height: 250px;
+    background: #007BFF;
+    border-radius: 15px; 
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 1.5% 1.5% 3% 1.5%; /* cleaner spacing all around */
+    margin-top: 3%;
+    
+}
+
+  
+
+.profile-image-background img{
+
+    width: 100px;
+    height: 100px;
+     margin:0 auto; 
+    display: block;
+}
+.info-box{
+    color: brown;
+    background-color: #f0f0f0;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+
+
+.profile-image-background {
+    
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+
+    overflow: hidden; /* Ensure the image stays within the circle */
+    position: absolute; /* Position the image above the card */
+    top: -50px; /* Move the image up to overlap the card */
+    flex-shrink: 0;
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+}
+
+.profile-image {
+    width: 100%; 
+    height: 100%;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 0 auto; /* Center the image within the circle */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.profile-info {
+    padding-top: 60px; 
+}
+
+.profile-info h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+.title1{
+   
+    width: 50%;
+    
+    font-size: 35px;
+    line-height: 20px;
+    color: #f0f0f0;
+    display: block;
+ }
+
+ .C1{
+   
+    width: 100%;
+    
+    font-size: 50px;
+    line-height: 30px;
+    color: #f0f0f0;
+    display: block;
+
+ }
+ .C{
+    margin-top: 10%;
+ }
+
+
+.card-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #5b9aad;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #5b9aad;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #5b9aad;
+}
+
+
+
+
+
+@media screen and (max-width: 1268px) {
+    .profile-card {
+      
+       height: auto;
+        
+        text-align: start;
+        margin-top: 40px; 
+
+        border: 6px solid #000; 
+        border-radius: 10px;   
+        padding: 10px; 
+
+    }
+    .profile-image-background {
+        width: 95px;
+        height: 95px;
+       
+    }
+    .profile-info {
+        
+        text-align: center;
+ }
+ 
+ 
+
+
+}
