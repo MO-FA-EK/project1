@@ -21,8 +21,7 @@ header {
 
 .logo {
     font-weight: bold;
-    font-size: 28px;
-    /* Büyütüldü */
+    font-size: 24px;
 }
 
 nav ul {
@@ -34,8 +33,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    /* Büyütüldü */
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -52,8 +50,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
-    font-size: 16px;
-    /* Büyütüldü */
 }
 
 button.active {
@@ -71,7 +67,10 @@ main {
     padding: 40px 20px;
 }
 
+/* Help section ile ilgili css kodları silindi */
+
 .contact-section {
+    margin-top: 5%;
     display: flex;
     gap: 40px;
     padding: 40px;
@@ -79,7 +78,9 @@ main {
     background-color: rgba(0, 102, 204, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    height: 100dvb; /* Yüksekliği tam sayfa yapmak için eklendi */
+    /* Ana içeriği biraz yukarı taşımak için eklendi */
 }
 
 .contact-info {
@@ -88,8 +89,7 @@ main {
 
 .contact-info h2 {
     margin-bottom: 15px;
-    font-size: 36px;
-    /* Büyütüldü - 32px'ten 36px'e */
+    font-size: 28px;
     font-weight: 600;
 }
 
@@ -97,8 +97,6 @@ main {
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
-    font-size: 18px;
-    /* Büyütüldü - 16px'ten 18px'e */
 }
 
 .info-item {
@@ -111,20 +109,12 @@ main {
     color: #66ccff;
     margin-right: 15px;
     margin-top: 5px;
-    font-size: 24px;
-    /* Büyütüldü - 20px'ten 24px'e */
+    font-size: 20px;
 }
 
 .info-item h3 {
     margin-bottom: 5px;
     font-weight: 600;
-    font-size: 22px;
-    /* Büyütüldü - 18px'ten 22px'e */
-}
-
-.info-item p {
-    font-size: 18px;
-    /* Büyütüldü - 16px'ten 18px'e */
 }
 
 .hours {
@@ -134,18 +124,13 @@ main {
 .hours h3 {
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 22px;
-    /* Büyütüldü - 18px'ten 22px'e */
 }
 
 .hours p {
     display: flex;
     justify-content: space-between;
-    max-width: 250px;
-    /* Genişletildi - içeriğe uyum sağlaması için */
+    max-width: 200px;
     margin-bottom: 5px;
-    font-size: 18px;
-    /* Büyütüldü - 16px'ten 18px'e */
 }
 
 .contact-form {
@@ -153,8 +138,7 @@ main {
 }
 
 .form-group {
-    margin-bottom: 25px;
-    /* Artırıldı - daha fazla boşluk için */
+    margin-bottom: 20px;
 }
 
 .form-row {
@@ -168,10 +152,8 @@ main {
 
 label {
     display: block;
-    margin-bottom: 10px;
-    /* Artırıldı */
-    font-size: 18px;
-    /* Büyütüldü - 16px'ten 18px'e */
+    margin-bottom: 8px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -182,14 +164,12 @@ label span {
 input,
 textarea {
     width: 100%;
-    padding: 14px 15px;
-    /* Artırıldı - daha yüksek kutular için */
+    padding: 12px 15px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     color: white;
-    font-size: 18px;
-    /* Büyütüldü - 16px'ten 18px'e */
+    font-size: 14px;
 }
 
 input:focus,
@@ -205,22 +185,17 @@ textarea:focus {
 .input-icon i {
     position: absolute;
     left: 15px;
-    top: 16px;
-    /* Ayarlandı - kutuların yüksekliği arttığı için */
+    top: 15px;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 18px;
-    /* Büyütüldü */
 }
 
 .input-icon input {
-    padding-left: 45px;
-    /* Artırıldı - ikonlara yer açmak için */
+    padding-left: 40px;
 }
 
 .send-btn {
     width: 100%;
-    padding: 16px;
-    /* Artırıldı */
+    padding: 15px;
     background-color: #00b300;
     color: white;
     border: none;
@@ -228,8 +203,7 @@ textarea:focus {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 18px;
-    /* Büyütüldü - 16px'ten 18px'e */
+    font-size: 16px;
 }
 
 .send-btn:hover {
