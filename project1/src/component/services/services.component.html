@@ -6,6 +6,7 @@
     <div class="C1">بيايتبايستباليايبلا </div>
 </div>
 
+<<<<<<< Updated upstream
 <div class="card-container" *ngFor="let service of services">
   <div class="title">
       <h2>{{ service.title }}</h2>
@@ -13,6 +14,12 @@
 
 
   <div class="profile-card" *ngFor="let freelancer of service.freelancers">
+=======
+<div class="card-container">
+    <div class="border"> </div>
+<div class="profile-card" *ngFor="let member of members">
+    
+>>>>>>> Stashed changes
     <div class="profile-image-background">
       <div class="profile-image">
         <img [src]="freelancer.image" class="card-img-top" alt="Freelancer Image">
