@@ -6,11 +6,12 @@ import { ServicesComponent } from '../component/services/services.component';
 import { FooterComponent } from '../component/footer/footer.component';
 import { AboutUsComponent } from '../component/about-us/about-us.component';
 import { LoginComponent } from '../component/login/login.component';
+import { ContactComponent } from '../component/contact/contact.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,
-    HomepageComponent,HeaderComponent,ServicesComponent,FooterComponent,AboutUsComponent,LoginComponent
+    HomepageComponent,HeaderComponent,ServicesComponent,FooterComponent,AboutUsComponent,LoginComponent,ContactComponent
     
   ],
   templateUrl: './app.component.html',
