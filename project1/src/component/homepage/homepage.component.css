@@ -7,47 +7,61 @@
   
   
 
-.A{
-    /* background-color: #000E2D; */
+  .intro-box {
     display: flex;
-    margin: 0 auto; 
-    width: 90%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-   
-    
-
-
-}
-.A1{
-    
-  background-color: transparent;
-        color: aliceblue;
-        font-size: 16px; /* حجم خط مناسب */
-        line-height: 1.6; /* زيادة المسافة بين السطور */
-        /* border-radius: 10px;  */
-        max-width: 800px; /* تحديد عرض أقصى */
-        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  */
-        font-family: Arial, sans-serif;
-        /* margin-right: 50%; */
-
-      
-      
-}.A3 {
-    margin: 0 auto;
-    font-size: 200%;
-    width: 100%;
-    display: flex; /* enables layout control */
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end; /* align items to the left */
+    background: linear-gradient(to bottom right, #00aaff, #002a9f);
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 80px auto;
+    max-width: 1200px;
+  }
+
+  .intro-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
   }
   
-  .A3 img {
-    width: 300px;
-    height: 300px;
-    border: 4px solid #00D4FF; 
-    border-radius: 10px; 
+  .intro-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
+  
+  .intro-text {
+    flex: 1;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  .intro-text h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .intro-image {
+    flex: 0 0 300px;
+    border: 3px solid #00c8ff;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
 .B1{
     color: brown;
 }
@@ -155,6 +169,7 @@
 .profile-info p {
     font-size: 0.9em;
     line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 
@@ -205,3 +220,30 @@
 
 
 }
+
+button {
+    background-color: #003369;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  

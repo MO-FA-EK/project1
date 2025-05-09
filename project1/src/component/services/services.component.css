@@ -5,6 +5,27 @@
 
 }
 
+.text-box {
+    background: linear-gradient(135deg, #00b4db, #0083b0); /* Nice blue gradient */
+    padding: 50px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  
+
 
 .card-container {
     display: flex;

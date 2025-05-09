@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
+import image1 from "./assets/image.png"
 
 function Home() {
     const navigate = useNavigate();
@@ -10,20 +11,17 @@ function Home() {
       <div className="home-main">
         <div className="home-left">
           <h1>Join our team<br/>Be our Developer.</h1>
-          <p>Qwilr helps you to be a developer: easy, fast and beautiful.</p>
+          <p>EasyJob helps you to be a developer: easy, fast and beautiful.</p>
           <button className="get-started-btn" onClick={() => navigate('/register')}>Get Started →</button>
         </div>
         <div className="home-right">
-          <div className="phone-mockup phone-mockup-1">
-            <img src="https://placehold.co/200x400?text=Phone+1" alt="Phone 1" />
-          </div>
-          <div className="phone-mockup phone-mockup-2">
-            <img src="https://placehold.co/200x400?text=Phone+2" alt="Phone 2" />
+          <div className="image1">
+            <img src={image1} alt="image1" />
           </div>
         </div>
       </div>
       <div className="home-footer">
-        <span>OVER 50,000 DEVELOPERS <span style={{color: '#F25F5C'}}>❤</span> </span>
+        <span>EasyJob OVER 5,000 DEVELOPER <span style={{color: '#F25F5C'}}>❤</span> </span>
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ function SideBar() {
                 </li>
                 <li style={{ marginTop: '140px' }}>
                     <hr/>
-                    <button onClick={() => navigate('/dashboard/settings')} className="sidebar-button">
+                    <button onClick={() => navigate('/dashboard')} className="sidebar-button">
                         Settings
                     </button>
                 </li>
